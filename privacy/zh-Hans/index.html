@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策 · App Scope</title>
+<meta name="description" content="App Scope by ZuYuan Zhou / Sixplus: developer reports, Google permissions, privacy and support.">
+<link rel="canonical" href="https://appscope.zhouzuyuan.cn/privacy/zh-Hans/">
+<link rel="icon" href="/icon.png">
+<link rel="stylesheet" href="/style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="/"><img src="/icon.png" alt="" width="44" height="44">App Scope</a>
+<nav aria-label="Main navigation"><a href="/">Overview</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav></header>
+<main id="main"><h1>隐私政策</h1><p>版本 1.0.0 · 生效日期：2026 年 10 月 29 日</p>
+<h2>适用范围</h2>
+<p>本政策适用于 ZuYuan Zhou / Sixplus 提供的 AppScope Developer Dashboard（iOS、iPadOS 与 macOS）。AppScope 是独立开发者工具，与 Apple 或 Google 无隶属关系。</p>
+<h2>账户与授权报表</h2>
+<p>连接 App Store Connect 后，AppScope 使用你提供的 API Key 和账户标识，直接向 Apple 请求你的应用、销售报表和客户评论。授权 Google AdMob 后，AppScope 使用 Google OAuth 与令牌，直接向 Google 请求账户资料和广告报表。授权 Google Play 财务报表只读访问后，应用从你配置的私有 Cloud Storage 报表桶下载销售和收益 ZIP／CSV，在当前设备解析并缓存解析后的记录。销售记录可能包含订单标识、日期、财务状态、应用与商品标识、金额、币种及买家国家；收益记录包含交易日期和类型、应用标识、商家币种与金额。这些报表不表示银行实际到账，应用不自动读取 Google Payments 打款历史。请求会标识所连接的账户。报表在设备上展示并缓存；AppScope 不运营另一个用于汇总你的销售或广告收入的服务器。</p>
+<h2>Google 权限与受限使用</h2>
+<p>Google 登录请求账户标识和邮箱，用于标记与区分连接。AdMob 只读权限用于发现 publisher、应用及读取广告报表。Google Play 报表需要 Cloud Storage 只读权限（<code>https://www.googleapis.com/auth/devstorage.read_only</code>）。该权限覆盖范围大于单个 Play 报表桶，因此 Google 同意页面会显示读取 Cloud Storage 数据。AppScope 的报表读取器仅请求你配置的 Play 财务报表桶及其销售、收益报表路径，不提供通用 Cloud Storage 浏览、写入、删除或权限管理功能；访问仍受 Google 原有账户与桶权限控制。 AppScope 使用与传输通过 Google API 获得的信息时遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，包括 Limited Use（受限使用）要求。Google 用户数据用于你选择的账户与报表功能，不出售、不用于广告或训练 AI 模型、不发送至 AI 服务商。应用不把 Google OAuth 令牌或财务报表上传至开发者服务器。Google 连接目录可按下文通过你自己的 iCloud 同步；Google 授权令牌与 Play 报表缓存留在当前设备。开发者不会日常接收或查阅你的报表；联系支持时请只提供你主动选择的信息，避免发送财务记录或凭据。</p>
+<h2>本机存储与 iCloud</h2>
+<p>账户凭据与授权令牌保存在系统钥匙串。账户目录和显示偏好可通过你的 iCloud 同步；标记为可同步的 Apple API 私钥可通过 iCloud 钥匙串同步。Google 需在每台设备分别授权。报表、评论、回复草稿和有权限读取的运营快照可缓存在本机。Apple 按其服务条款与隐私政策处理 iCloud 和钥匙串服务。</p>
+<h2>本版回复与翻译</h2>
+<p>本版暂停 AI 回复功能，不提供 AI Key 设置或 AI 草稿生成，不为生成回复向 DeepSeek、豆包或其他 AI 服务商发送评论、反馈或报表。你可以手动编辑草稿；只有另行确认提交时，应用才向 Apple 提交评论回复，或向关联 CloudKit 服务提交管理员反馈回复。 支持的系统使用 Apple 翻译框架按需翻译评论和反馈，首次使用可能需要下载语言包。译文用于阅读参考，原文保留，译文不自动成为公开回复。翻译支持情况取决于系统、设备和语言组合。</p>
+<h2>购买与会员</h2>
+<p>付款、试用、订阅续订、取消和退款由 Apple 的 App Store 服务处理。AppScope 读取 StoreKit 验证后的交易与权益，解锁会员功能，并提供恢复购买入口；不会将购买收据上传到独立的开发者服务器。应用不接收你的银行卡号或付款账户凭据。App Store 的交易记录与相关数据处理适用 Apple 的条款和隐私政策。</p>
+<h2>运营分析</h2>
+<p>运营面板供关联 SuperClock CloudKit 容器的授权管理员使用，可显示该服务既有的产品使用记录、匿名化账户或安装标识、使用画像和反馈，以及发送管理员回复或已读回执。访问权限由 CloudKit 服务端决定。这与追踪 AppScope 用户在其他公司的应用中的行为不同；SuperClock 自身的数据收集适用其独立隐私政策。</p>
+<h2>汇率和网络服务</h2>
+<p>汇率服务收到所需日期和币种，不收到你的账户密钥、销售金额或客户评论。Apple、Google 和汇率服务可能按自己的政策处理 IP 地址等连接元数据。公开产品与政策网站由 GitHub Pages 托管，GitHub 可能按其隐私政策处理网站连接元数据；这些信息页面不发起 Google 授权，也不要求输入账户凭据。</p>
+<h2>跟踪与广告</h2>
+<p>AppScope 不嵌入广告 SDK、不访问 IDFA、不出售个人信息，也不把其他公司应用或网站的数据合并用于定向广告或广告衡量。展示 AdMob 报表不意味着 AppScope 展示广告。AppScope 不额外上传自身的产品使用分析。</p>
+<h2>保留、管理与撤回</h2>
+<p>本机缓存和草稿保留至通过应用支持的控制、设备存储管理或卸载清除。从当前设备移除 Google 连接会移除所保存的 OAuth 状态，并请求清除关联的本机 AdMob 与 Play 报表缓存，不删除 Google 的源报表。在 macOS 上，单独删除应用程序可能保留应用数据。钥匙串与 iCloud 项目也可能保留至另行删除。可在设置中断开账户；在 https://myaccount.google.com/connections 撤销 Google 授权，或在 App Store Connect 撤销 API Key，可阻止后续授权请求。应用内断开连接与 Google 端撤销授权是不同操作。 这些操作不会删除源平台报表、已公开回复或第三方服务商记录。Apple、Google 与 iCloud 各自适用其保留和删除规则。如需协助访问、更正或删除 Sixplus 持有的数据，请联系 tecentmoon.feedback@gmail.com。请勿发送 API Key、私钥或授权令牌。</p>
+<h2>儿童、更新与联系</h2>
+<p>本工具面向开发者，不面向儿童。政策更新会注明生效日期。 隐私与支持：tecentmoon.feedback@gmail.com。</p></main>
+<footer><p>AppScope Developer Dashboard · ZuYuan Zhou / Sixplus</p>
+<p><a href="mailto:tecentmoon.feedback@gmail.com">tecentmoon.feedback@gmail.com</a> · <a href="/privacy/">Privacy policy</a> · <a href="/privacy/zh-Hans/" lang="zh-Hans">中文隐私政策</a></p>
+<p>Independent software. Not affiliated with Apple or Google.</p></footer></body></html>

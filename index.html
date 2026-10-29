@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Developer reports · App Scope</title>
+<meta name="description" content="App Scope by ZuYuan Zhou / Sixplus: developer reports, Google permissions, privacy and support.">
+<link rel="canonical" href="https://appscope.zhouzuyuan.cn/">
+<link rel="icon" href="/icon.png">
+<link rel="stylesheet" href="/style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="/"><img src="/icon.png" alt="" width="44" height="44">App Scope</a>
+<nav aria-label="Main navigation"><a href="/">Overview</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav></header>
+<main id="main"><p class="eyebrow">FOR INDEPENDENT DEVELOPERS</p>
+<h1>Your app reports.<br>Your own accounts.</h1>
+<p class="lead">App Scope is a native developer dashboard for iPhone, iPad and Mac, provided by ZuYuan Zhou / Sixplus.</p>
+<p>Read Apple sales, Google AdMob advertising reports and Google Play monthly sales and earnings. Browse App Store reviews and prepare replies. Your connected services keep control of access to their data.</p>
+<div class="actions"><a class="button" href="/support/">Connection guide</a><a href="/privacy/">Read our privacy policy →</a></div>
+<section><h2>What App Scope does</h2><div class="cards">
+<article><h3>Apple sales and reviews</h3><p>Connect your own App Store Connect API key to view reports and reviews. Replies require a separate confirmation before submission.</p></article>
+<article><h3>Google AdMob</h3><p>Authorize Google to discover your publishers and apps, then view estimated advertising revenue and reporting metrics.</p></article>
+<article><h3>Google Play reports</h3><p>Authorize read-only access and provide your Play financial report bucket. View monthly sales, refunds and earnings in their original currencies.</p></article>
+</div></section>
+<section><h2>Why Google authorization is needed</h2><p>Your Google account identifier and email distinguish your connections. AdMob permissions enable account, app and advertising-report reads. The optional Play reports connection uses Cloud Storage read-only permission to download the reports that Google Play stores in your private financial report bucket.</p>
+<p>Google describes this permission as access to Cloud Storage data. App Scope limits its report reader to the Play report bucket you configure and its sales and earnings paths. It does not write or delete your Google data. You must already have the relevant Play Console financial permissions.</p>
+<p>Authorization takes place on Google's own sign-in page, opened by the native app. This website never asks for your Google password, API private key or authorization token.</p></section>
+<section><h2>Data stays under your control</h2><p>Google tokens are stored in the system Keychain on the current device. Report requests go directly to Google; parsed reports are cached locally. App Scope does not run a separate server to collect your financial reports, sell Google user data, use it for advertising or send it to AI providers.</p>
+<p>Connection metadata and preferences may sync through your own iCloud account. Each device separately authorizes Google. Read the <a href="/privacy/">complete privacy policy</a> for storage, removal, source-platform records and other services.</p></section>
+<section><h2>Reporting, not a bank statement</h2><p>AdMob estimated revenue, Google Play estimated sales, monthly earnings and actual payouts have different meanings. App Scope keeps sales and earnings separate and does not automatically read Google Payments payout history.</p></section>
+<section><h2>Try before connecting</h2><p>The in-app sample dashboard uses fictional data without connecting an account. Basic summaries are free; advanced features use an annual subscription or lifetime purchase processed by Apple. Prices and trial eligibility are shown in the app. AI reply generation is paused in this version.</p></section>
+<section lang="zh-Hans"><h2>开发者自己的报表看板</h2><p>App Scope 面向 iPhone、iPad 和 Mac，提供 Apple 销售、AdMob 广告报表、Google Play 月度销售与收益，以及 App Store 评论管理。使用你自己的授权账户，Google 令牌与财务报表不上传至开发者服务器。Google Play 需已有财务数据查看权限；销售、收益与实际打款分别处理。</p><p><a href="/privacy/zh-Hans/">中文隐私政策</a> · <a href="mailto:tecentmoon.feedback@gmail.com">联系支持</a></p></section></main>
+<footer><p>AppScope Developer Dashboard · ZuYuan Zhou / Sixplus</p>
+<p><a href="mailto:tecentmoon.feedback@gmail.com">tecentmoon.feedback@gmail.com</a> · <a href="/privacy/">Privacy policy</a> · <a href="/privacy/zh-Hans/" lang="zh-Hans">中文隐私政策</a></p>
+<p>Independent software. Not affiliated with Apple or Google.</p></footer></body></html>
